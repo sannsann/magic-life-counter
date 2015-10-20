@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".BattleScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/opponent_related"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:rotation="180">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/life_opponentTextView"
+            android:gravity="center"
+            android:text="OpponentLife"
+            />
+        <Button
+            android:id="@+id/opponent_plusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_opponentTextView"
+            android:text="+"/>
+        <Button
+            android:id="@+id/opponent_minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_opponentTextView"
+            android:layout_alignParentRight="true"
+            android:text="-"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/player_related"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/life_playerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PlayerLife"
+            android:layout_alignParentTop="true"
+            />
+        <Button
+            android:id="@+id/player_plusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_playerTextView"
+            android:text="+"/>
+        <Button
+            android:id="@+id/player_minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/life_playerTextView"
+            android:layout_alignParentRight="true"
+            android:text="-"/>
+
+    </RelativeLayout>
+
+
+    <!--<fragment class="com.stormcloud.magicthetallying.FragmentLayout$TitlesFragment"-->
+        <!--android:id="@+id/titles"-->
+        <!--android:layout_width="match_parent" android:layout_height="match_parent" />-->
+
+
+</LinearLayout>
